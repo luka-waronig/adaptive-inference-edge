@@ -1,7 +1,9 @@
 
-# Adaptive Inference for Edge AI
+# Seeing Earth at the Edge
 
-Adaptive inference for edge AI in remote sensing - Vision transformer depth adaptation
+## Adaptive inference for vision models in edge and remote sensing deployments 
+
+Goal: Vision tranformer with confidence-based execution depth variation / early-exits - improved efficiency under operational constraints
 
 ## Dataset
 
