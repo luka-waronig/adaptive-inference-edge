@@ -42,3 +42,8 @@ Dataset license: CC BY-NC 4.0, as specified by the dataset authors.
 https://creativecommons.org/licenses/by-nc/4.0/
 
 The actual dataset image files are not included in this repository for memory reasons.
+
+## Methods for adaptive inference at the edge
+
+We propose a vision transformer architecture with confidence-based processing depth adaptation during model inference. The data we are working with was deliberately constructed with substantial variation within classes and visual similarity between different classes. That makes it a reasonable setting for testing whether some images can be classified reliably at shallow depths while others benefit from further processing.
+
