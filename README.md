@@ -1,3 +1,4 @@
+
 # Adaptive Inference for Edge AI
 
 Adaptive inference for edge AI in remote sensing - Vision transformer depth adaptation
@@ -47,3 +48,24 @@ The actual dataset image files are not included in this repository for memory re
 
 We propose a vision transformer architecture with confidence-based processing depth adaptation during model inference. The data we are working with was deliberately constructed with substantial variation within classes and visual similarity between different classes. That makes it a reasonable setting for testing whether some images can be classified reliably at shallow depths while others benefit from further processing.
 
+```text
+                                                                /
+                            _.----------._            [===]    /
+                        _.-'  ######      '-._      .----. \[o]\
+                      .'  ### ##         ###  '. .-'        /   [===]
+                    /  ######          ########  \         /   \
+                  /  ####               #########  \           ;
+                 /  ###                 #   ##   #  \         v
+                ;  ##                 #############  ;      .'
+               |   ###                 ############## | .-'
+               |   ######                ##########  .-'
+            .- |   ########                  ### .--' |
+          .'   |   ############               .-'###  |
+         /      ;   ############         .---' ####  ;
+       .'        \  ############    .---'      ###  /
+       ;          \   ####### .----'           ##  /
+       \            \  # .--'##                  /
+        '---.___.-------' #                   .'
+                        '-._ _            _.-'
+                               '--------'
+```
