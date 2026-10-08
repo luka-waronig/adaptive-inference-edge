@@ -3,9 +3,10 @@
 Adaptive inference for edge AI in remote sensing - Vision transformer depth adaptation
 
 ## Dataset
-
+ 
 We use NWPU-RESISC45 for remote sensing scene
 classification. Developed by the Northwestern Polytechnic University, NWPU-RESISC45 contains 31,500 RGB images, each 256 × 256 pixels, across 45 balanced classes with 700 images per class. Its classes include forests, harbours, industrial areas, agricultural patterns, and different residential densities. In this project, it will serve as our optical (RGB image) remote sensing scene-classification benchmark dataset.
+The images come with scene-level labels and a consistent RGB format, meaning we can focus this project on investigating primarily the execution of the adaptive model inference without first needing to work on processing radar channels or developing some detection-annotation pre-processing pipelines.
 
 Original dataset authors and access:
 https://gcheng-nwpu.github.io/
