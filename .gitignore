@@ -1,0 +1,10 @@
+# excluding downloaded datasets and run artifacts
+data/
+runs/
+
+# excluding local environments and notebook caches
+.venv/
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.DS_Store
