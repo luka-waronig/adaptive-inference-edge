@@ -21,7 +21,7 @@ Gong Cheng, Junwei Han, and Xiaoqiang Lu.
 Proceedings of the IEEE, 105(10), 1865–1883, 2017.
 https://doi.org/10.1109/JPROC.2017.2675998
 
-Image archive:
+Image archive (direct download link from Hugging Face):
 https://huggingface.co/datasets/isaaccorley/resisc45/resolve/883edc0eee77b2c84225472f10f126e3ed83fa6e/NWPU-RESISC45.zip
 
 
