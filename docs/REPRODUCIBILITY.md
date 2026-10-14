@@ -76,7 +76,7 @@ Do not change run settings while reusing an existing run directory. The notebook
 
 ## 6. Verify outputs
 
-Compare the new outputs with the tables in `RESULTS.md`. Small differences can arise from runtime, device, and dependency changes. Do not describe a result as reproduced unless the corresponding cells completed successfully in your run.
+Compare the new outputs with the reported results from the recorded experiments. Small differences can arise from runtime, device, and dependency changes. 
 
 Important checks:
 
