@@ -3,7 +3,19 @@
 
 ## Adaptive inference for vision models in edge and remote sensing deployments 
 
-Goal: Vision tranformer with confidence-based execution depth variation / early-exits - improved efficiency under operational constraints
+
+Our goal is to investigate whether a vision transformer can reduce inference computation by adapting its execution depth to individual inputs, while preserving classification accuracy.
+
+### Start here
+
+**Experiments**
+- [Notebook I — Static ViT baseline](I_static_vit_baseline.ipynb)
+- [Notebook II — Adaptive ViT inference](II_adaptive_vit_inference.ipynb)
+
+**Documentation**
+- [Design decisions and limitations](docs/DESIGN_AND_LIMITATIONS.md)
+- [Reproducibility guide](docs/REPRODUCIBILITY.md)
+
 
 ## Dataset
  
@@ -54,6 +66,23 @@ We propose a vision transformer architecture with confidence-based processing de
 ## Contents of this repository:
 
 We deliver our experiments in a set of two notebooks, and explain more details regarding the design and reproducibility of the experiments in additional documentation (in docs/). Relevant background literature papers are also attached (in literature/). Data is saved under data/, and the outputs from experiment runs are saved under runs/.
+
+
+## Results
+
+On the held-out NWPU-RESISC45 test set (6,300 images), confidence-guided early exits substantially reduced average inference computation while preserving most of the static model's accuracy.
+
+| Configuration | Accuracy | GFLOPs / image |
+|---|---:|---:|
+| Static DeiT-Tiny (12 blocks) | 94.71% | 1.274 |
+| Adaptive (confidence-guided exits) | 93.79% | 0.585 |
+
+**Main result:** 54.13% less computation for a 0.92 percentage-point reduction in classification accuracy.
+
+At identical average compute, confidence-guided routing also outperformed random exit assignment by 4.74 percentage points, demonstrating that selecting which images receive deeper processing matters.
+
+See the [accuracy–computation frontier](figures/pareto.png) and [Notebook II](II_adaptive_vit_inference.ipynb) for the full evaluation, including fixed-depth comparisons and runtime measurements.
+
 
 ```text
                                                                 /
