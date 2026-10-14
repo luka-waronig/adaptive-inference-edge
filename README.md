@@ -16,6 +16,7 @@ Our goal is to investigate whether a vision transformer can reduce inference com
 - [Design decisions and limitations](docs/DESIGN_AND_LIMITATIONS.md)
 - [Reproducibility guide](docs/REPRODUCIBILITY.md)
 
+We deliver our experiments in a set of two notebooks, and explain more details regarding the design and reproducibility of the experiments in additional documentation (in docs/). Relevant background literature papers are also attached (in literature/). Data is saved under data/, and the outputs from experiment runs are saved under runs/.
 
 ## Dataset
  
@@ -63,11 +64,6 @@ The actual dataset image files are not included in this repository for memory re
 
 We propose a vision transformer architecture with confidence-based processing depth adaptation during model inference. The data we are working with was deliberately constructed with substantial variation within classes and visual similarity between different classes. That makes it a reasonable setting for testing whether some images can be classified reliably at shallow depths while others benefit from further processing.
 
-## Contents of this repository:
-
-We deliver our experiments in a set of two notebooks, and explain more details regarding the design and reproducibility of the experiments in additional documentation (in docs/). Relevant background literature papers are also attached (in literature/). Data is saved under data/, and the outputs from experiment runs are saved under runs/.
-
-
 ## Results
 
 On the held-out NWPU-RESISC45 test set (6,300 images), confidence-guided early exits substantially reduced average inference computation while preserving most of the static model's accuracy.
@@ -82,6 +78,10 @@ On the held-out NWPU-RESISC45 test set (6,300 images), confidence-guided early e
 At identical average compute, confidence-guided routing also outperformed random exit assignment by 4.74 percentage points, demonstrating that selecting which images receive deeper processing matters.
 
 See the [accuracy–computation frontier](figures/pareto.png) and [Notebook II](II_adaptive_vit_inference.ipynb) for the full evaluation, including fixed-depth comparisons and runtime measurements.
+
+
+
+
 
 
 ```text
