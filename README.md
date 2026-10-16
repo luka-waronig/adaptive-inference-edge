@@ -83,7 +83,6 @@ See the [accuracy–computation frontier](figures/pareto.png) and [Notebook II](
 
 
 
-
 ```text
                                                                 /
                             _.----------._            [===]    /
@@ -105,3 +104,8 @@ See the [accuracy–computation frontier](figures/pareto.png) and [Notebook II](
                         '-._ _            _.-'
                                '--------'
 ```
+
+
+
+
+<3
