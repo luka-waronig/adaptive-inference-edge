@@ -1,8 +1,8 @@
 # Design choices and limitations
 
-## Problem setting
+## Problem setting:
 
-The project considers a resource-constrained field gateway that classifies independent remote-sensing image tiles for local indexing. NWPU-RESISC45 is a benchmark used to evaluate the idea; it is not a recorded operational stream. The project does not perform temporal change detection.
+Our project considers a resource-constrained field gateway that classifies independent remote-sensing image tiles for local indexing. NWPU-RESISC45 is a benchmark used to evaluate the idea; it is not a recorded operational stream. The project does not perform temporal change detection.
 
 ## Model design
 
@@ -53,7 +53,7 @@ For the recorded NWPU-RESISC45 experiment and DeiT-Tiny implementation:
 8. **Calibration under shift:** temperature scaling and thresholds are selected on the benchmark validation data. Calibration drift under distribution shift is not evaluated.
 9. **Search scope:** training settings and threshold candidates are explicitly configured; the experiment is not an exhaustive search over architectures, hyperparameters, or all possible stopping policies.
 
-## Next experiments if more compute/time becomes available
+## Next experiments if more time is available
 
 - Measure latency, energy, and thermal behaviour on a target edge device.
 - Evaluate calibration and accuracy under geographic or sensor domain shift.
