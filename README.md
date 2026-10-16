@@ -50,10 +50,7 @@ https://storage.googleapis.com/remote_sensing_representations/resisc45-val.txt
 Test:
 https://storage.googleapis.com/remote_sensing_representations/resisc45-test.txt
 
-We download these split manifests from the Google Research links,
-with checksum-verified copies at the pinned mirror as a fallback.
-It additionally divides the published validation partition into
-model-selection and policy-validation subsets.
+The notebooks download the published split manifests from a pinned Hugging Face revision and verify their SHA-256 checksums. We further divide the published validation partition into separate model-selection and policy-validation subsets.
 
 Dataset license: CC BY-NC 4.0, as specified by the dataset authors.
 https://creativecommons.org/licenses/by-nc/4.0/
